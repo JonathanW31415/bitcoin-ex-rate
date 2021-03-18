@@ -1,10 +1,22 @@
 .App {
   text-align: center;
+  background-color: #ff9900;
+  height: 100vh;
+  width: 100vw;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* justify-content: center;  */
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.Switch-logo {
+  height: 10vmin;
+  transform: rotate(90deg)
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -14,12 +26,6 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -35,4 +41,9 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.dropdown-menu {
+  max-height:30vh;
+  overflow-y: scroll;
 }
