@@ -121,8 +121,18 @@ export const App = () => {
               onCurrencyChange={handleCryptoChange}
             />
           </Row>
-          <Row className="mt-5 justify-content-center align-items-end">
-            <h6>Made with ❤️ in 🇬🇧</h6>
+          <Row className="mt-5 mb-5 justify-content-center fixed-bottom">
+            <h6>Made with ❤️ in Britain</h6>
+          </Row>
+          <Row className="mb-3 justify-content-center fixed-bottom">
+            <a
+              className="font-weight-bold"
+              href="https://github.com/JonathanW31415/bitcoin-ex-rate"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Source Code📜
+            </a>
           </Row>
         </>
       ) : null}
