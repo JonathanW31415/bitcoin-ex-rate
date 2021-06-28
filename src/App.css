@@ -2,7 +2,7 @@
   text-align: center;
   background-color: #1B1464;
   min-height: 100vh;
-  min-width: 100vw;
+  width: 100%;
   padding-left: 10px;
   padding-right: 10px;
 }
