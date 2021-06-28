@@ -88,7 +88,8 @@ export const App = () => {
   const fiat = Type === "Crypto" ? tryConvert(Amount, toFiat, "Fiat") : Amount;
 
   return (
-    <Container fluid className="App d-flex flex-column justify-content-center">
+    <Container fluid className="App d-flex flex-column">
+    <Container fluid className="content d-flex flex-column justify-content-center align-items-center">
       <Row className="justify-content-center">
         <img src={logo} className="App-logo m-2" alt="logo" />
       </Row>
@@ -121,21 +122,25 @@ export const App = () => {
               onCurrencyChange={handleCryptoChange}
             />
           </Row>
-          <Row className="mt-5 mb-5 justify-content-center fixed-bottom">
-            <h6>Made with ❤️ in Britain</h6>
+
+        </>
+      ) : null}
+    </Container>
+    <Container className="mb-3 d-flex flex-column align-items-bottom">
+          <Row className="justify-content-center">
+            <h6 className="bottom-color">Made with ❤️ in Britain</h6>
           </Row>
-          <Row className="mb-3 justify-content-center fixed-bottom">
+          <Row className="justify-content-center">
             <a
               className="font-weight-bold"
-              href="https://github.com/JonathanW31415/bitcoin-ex-rate"
+              href="https://github.com/jonathanwxyz/bitcoin-ex-rate"
               target="_blank"
               rel="noopener noreferrer"
             >
               Source Code📜
             </a>
           </Row>
-        </>
-      ) : null}
+    </Container>
     </Container>
   );
 };
