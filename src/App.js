@@ -128,7 +128,7 @@ export const App = () => {
     </Container>
     <Container className="mb-3 mt-2 d-flex flex-column align-items-bottom">
           <Row className="justify-content-center">
-            <h6 className="bottom-color">Made with ❤️ in Britain🇬🇧</h6>
+            <h6 className="bottom-color">Made with ❤️ in Britain</h6>
           </Row>
           <Row className="justify-content-center">
             <a
