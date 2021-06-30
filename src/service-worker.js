@@ -59,6 +59,7 @@ registerRoute(
   //     new ExpirationPlugin({ maxEntries: 50 }),
   //   ],
   // })
+  // Network First caching strategy
   new NetworkFirst()
 );
 
